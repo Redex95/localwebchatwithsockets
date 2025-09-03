@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+  width: 800px;
+  height: 100%;
+  position: relative;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat{
+  height: 93%;
+  min-height: 50px;
+  max-height: calc(100% - 50px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  overflow-y: auto;
+  padding: 10px;
+
+
+}
+
+.messageSend{
+  height: 7%; 
+  min-height:50px;
+  max-height: calc(100% - 50px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.messageSend>input{
+  width: 90%;
+  font-size: 20px;
+  min-height: 50px;
+  padding: 0 10px 0 10px;
+  border-radius: 20px;
+  background: gray;
+  border: none;
+}
+.messageSend>input:focus{
+  outline:none;
+}
+.messageSend>input:hover{
+  cursor: default;
+}
+
+
+.messageSend>button{
+  font-size: 20px;
+  border: none;
+  width: 20%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messBox{
+
+  max-width: 500px;
+  min-width: 150px;
+  
+  background: lightblue;
+
+  align-self: flex-start;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  flex-direction: column;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  border-radius: 20px;
+
+  padding: 10px;
+}
+
+.mineMess{
+  background: lightgreen;
+
+  align-self: flex-end;
+  justify-content: end;
+  
+}
+.dataInvio{
+  color: rgba(128, 128, 128, 0.8);
+  font-size: smaller;
+  align-self: flex-end;
+}
+
+
+.getToBottom{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 70px 0;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body{
+  width: 100%;
+  height: 100%;
+}
+}
